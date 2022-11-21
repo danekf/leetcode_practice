@@ -28,6 +28,9 @@ Output: [0,1]*/
 
 
  var twoSum = function(nums, target) {
+
+  /*initial solution 
+
   nums.forEach( num => {
       var compliment = target - num
       if (nums.includes(compliment)){
@@ -35,6 +38,15 @@ Output: [0,1]*/
           return [num, compliment];
       }
   })
+
+  */
+
+  //solution 2
+
+  
+
+
+
 };
 
 twoSum ([2,7,11,15], 9);
