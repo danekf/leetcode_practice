@@ -29,7 +29,7 @@ Output: [0,1]*/
 
  var twoSum = function(nums, target) {
 
-  /*initial solution 
+  /*initial solution, returns all possible answers and combinations. Resulting in at least 2 'correct answers'
 
   nums.forEach( num => {
       var compliment = target - num
@@ -41,9 +41,25 @@ Output: [0,1]*/
 
   */
 
-  //solution 2
-
+  //solution 2, only returning the FIRST correct answer, avoiding duplicates. Without a hash map or for loop.
+  let pass = false;
+  let i = 0;
+  let answer = null;
   
+  
+  while (pass === false && i < nums.length){
+    let compliment = target - nums[i];
+    if (nums.includes(compliment)){
+      pass = true;
+      answer = [nums[i], compliment]          
+    }
+    else {
+      i++
+    }
+  }
+
+  console.log(answer);   
+  return answer;
 
 
 
