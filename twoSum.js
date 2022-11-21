@@ -31,7 +31,7 @@ Output: [0,1]*/
   nums.forEach( num => {
       var compliment = target - num
       if (nums.includes(compliment)){
-          console.log([num, compliment]); //log for now to check result
+          console.log([num, compliment]); //log for now
           return [num, compliment];
       }
   })
@@ -39,4 +39,4 @@ Output: [0,1]*/
 
 twoSum ([2,7,11,15], 9);
 
-//this answer currently returns 
+//this answer currently returns the answer twice.
